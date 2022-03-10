@@ -1,4 +1,4 @@
-module com.m07.javafx1 {
+module com.m07.javafx2 {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,6 +10,6 @@ module com.m07.javafx1 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens com.m07.javafx1 to javafx.fxml;
-    exports com.m07.javafx1;
+    opens com.m07.javafx2 to javafx.fxml;
+    exports com.m07.javafx2;
 }

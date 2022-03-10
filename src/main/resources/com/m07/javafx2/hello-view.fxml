@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Clients">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Open" />
+                  <Menu mnemonicParsing="false" text="Open Recent">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Reciente 1" />
+                    </items>
+                  </Menu>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save as.." />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences.." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Expedients">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tramits">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Administracio">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Llistats">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="393.0" prefWidth="137.0" style="-fx-background-color: #0000;" stylesheets="@CSS/shadowGridBorder.css">
+         <children>
+            <Pane prefHeight="486.0" prefWidth="136.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="447.0" layoutX="3.0" layoutY="10.0" stroke="#c3c3c3" strokeType="INSIDE" width="133.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Rectangle>
+                  <Text fill="#030303" layoutX="9.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="7.0" layoutY="52.0" prefHeight="13.0" prefWidth="124.0" />
+                  <GridPane alignment="CENTER" layoutX="18.0" layoutY="73.0" maxWidth="100.0" minWidth="100.0" prefHeight="365.0" prefWidth="100.0" vgap="30.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="138.0" minHeight="10.0" prefHeight="103.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="131.0" minHeight="0.0" prefHeight="108.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="110.0" stroke="#c3c3c3" strokeType="INSIDE" width="110.0" GridPane.halignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Rectangle>
+                        <GridPane alignment="CENTER" maxWidth="100.0" minWidth="100.0" prefHeight="0.0" prefWidth="77.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="48.0" minHeight="9.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Caprabo1" textAlignment="CENTER" wrappingWidth="88.81201171875" GridPane.halignment="CENTER" />
+                              <ImageView fitHeight="54.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@imagenes/frutas.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </GridPane>
+                        <GridPane alignment="CENTER" maxWidth="100.0" minWidth="100.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Caprabo2" textAlignment="CENTER" wrappingWidth="90.7294921875" GridPane.halignment="CENTER" />
+                              <ImageView fitHeight="55.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <image>
+                                    <Image url="@imagenes/frutas.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                        <GridPane alignment="CENTER" maxWidth="100.0" minWidth="100.0" prefHeight="109.0" prefWidth="80.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Caprabo3" textAlignment="CENTER" wrappingWidth="90.7294921875" GridPane.halignment="CENTER" />
+                              <ImageView fitHeight="54.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <image>
+                                    <Image url="@imagenes/frutas.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="110.0" stroke="#c3c3c3" strokeType="INSIDE" width="110.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Rectangle>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="110.0" stroke="#c3c3c3" strokeType="INSIDE" width="110.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Rectangle>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_RIGHT" prefHeight="456.0" prefWidth="177.0" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <Pane prefHeight="371.0" prefWidth="143.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="442.0" layoutX="3.0" layoutY="10.0" stroke="#c3c3c3" strokeType="INSIDE" width="164.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Rectangle>
+                  <Text layoutX="11.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serveis">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="9.0" layoutY="45.0" prefHeight="6.0" prefWidth="99.0" />
+                  <CheckBox layoutX="11.0" layoutY="67.0" mnemonicParsing="false" text="Nominas" />
+                  <CheckBox layoutX="11.0" layoutY="105.0" mnemonicParsing="false" text="IVA" />
+                  <CheckBox layoutX="11.0" layoutY="144.0" mnemonicParsing="false" text="Lloguers" />
+                  <CheckBox layoutX="11.0" layoutY="182.0" mnemonicParsing="false" text="Seg. Social" />
+                  <CheckBox layoutX="11.0" layoutY="222.0" mnemonicParsing="false" text="Riscos Laborals" />
+                  <CheckBox layoutX="11.0" layoutY="338.0" mnemonicParsing="false" text="Mútues" />
+                  <CheckBox layoutX="11.0" layoutY="262.0" mnemonicParsing="false" text="Mòduls" />
+                  <CheckBox layoutX="11.0" layoutY="300.0" mnemonicParsing="false" text="Renda" />
+                  <CheckBox layoutX="11.0" layoutY="375.0" mnemonicParsing="false" text="Convenis" />
+                  <Button layoutX="11.0" layoutY="416.0" mnemonicParsing="false" text="Serveis" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <Pane prefHeight="456.0" prefWidth="376.0" style="-fx-background-color: #0000;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="449.0" layoutX="8.0" layoutY="10.0" stroke="#c3c3c3" strokeType="INSIDE" width="375.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Rectangle>
+            <ImageView fitHeight="95.0" fitWidth="122.0" layoutX="160.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/user_icon.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="20.0" layoutY="49.0" maxWidth="700.0" prefHeight="3.0" prefWidth="338.0" />
+            <Text layoutX="25.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Profile">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Separator layoutX="20.0" layoutY="179.0" maxWidth="700.0" prefHeight="2.0" prefWidth="338.0" />
+            <Group layoutX="25.0" layoutY="228.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom fiscal" />
+                  <TextField layoutX="134.0" layoutY="-15.0" promptText="Escola del treball" />
+               </children>
+            </Group>
+            <Group layoutX="22.0" layoutY="263.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+                  <TextField layoutX="137.0" layoutY="-15.0" promptText="Escola del treball" />
+               </children>
+            </Group>
+            <Group layoutX="23.0" layoutY="297.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adreça" />
+                  <TextField layoutX="135.0" layoutY="-15.0" promptText="Urgell 222" />
+               </children>
+            </Group>
+            <Group layoutX="20.0" layoutY="364.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Província" />
+                  <TextField layoutX="137.0" layoutY="-15.0" promptText="Barcelona" />
+               </children>
+            </Group>
+            <Group layoutX="23.0" layoutY="329.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ciutat" />
+                  <TextField layoutX="135.0" layoutY="-15.0" promptText="Barcelona" />
+               </children>
+            </Group>
+            <Separator layoutX="20.0" layoutY="397.0" maxWidth="700.0" prefHeight="4.0" prefWidth="343.0" />
+            <Button layoutX="27.0" layoutY="417.0" mnemonicParsing="false" prefWidth="90.0" text="Editar" />
+            <Button layoutX="144.0" layoutY="417.0" mnemonicParsing="false" prefWidth="90.0" text="Consultar" />
+            <Button layoutX="270.0" layoutY="417.0" mnemonicParsing="false" prefWidth="90.0" text="Esborrar" />
+         </children></Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="115.0" prefWidth="700.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9180f" height="116.0" layoutX="14.0" layoutY="8.0" stroke="#ffffff00" strokeType="INSIDE" width="150.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4cd7d0" height="102.0" layoutX="197.0" layoutY="12.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0">
+               <effect>
+                  <DropShadow color="#657075" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0c341" height="102.0" layoutX="322.0" layoutY="12.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0">
+               <effect>
+                  <DropShadow color="#657075" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8ea8c" height="102.0" layoutX="586.0" layoutY="12.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0">
+               <effect>
+                  <DropShadow color="#657075" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a4e8e0" height="102.0" layoutX="454.0" layoutY="12.0" stroke="#ffffff00" strokeType="INSIDE" width="100.0">
+               <effect>
+                  <DropShadow color="#657075" />
+               </effect>
+            </Rectangle>
+            <Text fill="WHITE" layoutX="222.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="223">
+               <font>
+                  <Font name="Cantarell Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="347.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="17...">
+               <font>
+                  <Font name="Cantarell Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="479.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="237">
+               <font>
+                  <Font name="Cantarell Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="611.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12...">
+               <font>
+                  <Font name="Cantarell Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="32.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="207.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professors">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="339.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alumnes">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="470.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tràmits">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="605.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Docu...">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </bottom>
+</BorderPane>

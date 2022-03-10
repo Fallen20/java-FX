@@ -1,4 +1,4 @@
-package com.m07.javafx1;
+package com.m07.javafx2;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
