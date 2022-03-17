@@ -1,0 +1,55 @@
+/*#border {
+    -fx-background-color:red;
+    -fx-border-width: 5px;
+    -fx-border-color: white white linear-gradient(rgba(0,0,0,0.5),
+     rgba(255,255,255,0)) white;
+}*/
+
+.root{
+    -fx-background-color:white;
+}
+/*---------------------------------*/
+#borderPadre{
+    -fx-pref-width:800;
+    -fx-pref-height:800;
+}
+
+#border{
+    -fx-fill:#EEF6F5;
+    -fx-border-width: 5px;
+    -fx-effect: dropshadow(gaussian, #7A98A2, 10, 0, 0, 3);
+
+    -fx-arc-width: 30;
+    -fx-arc-height: 30;
+}
+
+#borderSmall{
+    -fx-fill:white;
+    -fx-effect: dropshadow(gaussian, #7A98A2, 10, 0, 0, 3);
+
+    /*combinando estos dos se redondean los bordes*/
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+}
+
+/*---------------------------------*/
+#TextoIdentificativoColumna{
+    -fx-font-size:16px;
+    -fx-font-weight:bold;
+    -fx-font-family:'Calibri';
+}
+
+#textoSmall{
+    -fx-font-size:13px;
+    -fx-underline:true;
+    -fx-font-style:italic;
+    -fx-font-family:'System';
+}
+
+/*---------------------------------*/
+
+/*-----------------*/
+#VBoxIzq{
+        -fx-pref-height:200;
+
+}

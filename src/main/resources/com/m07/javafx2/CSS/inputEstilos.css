@@ -1,0 +1,10 @@
+#input:editable{
+     -fx-background-color: white;
+     -fx-border-color: red;
+     -fx-border-radius: 5;
+     -fx-background-radius: 5;
+}
+
+#input:readonly{
+    -fx-background-color:#C8C8C8;
+}
