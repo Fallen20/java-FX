@@ -8,6 +8,13 @@
 .root{
     -fx-background-color:white;
 }
+
+/*---------------------------------*/
+#VBoxIzq{
+        -fx-pref-height:200;
+
+}
+
 /*---------------------------------*/
 #borderPadre{
     -fx-pref-width:800;
@@ -16,7 +23,7 @@
 
 #border{
     -fx-fill:#EEF6F5;
-    -fx-border-width: 5px;
+    /*-fx-border-width: 5px;*/
     -fx-effect: dropshadow(gaussian, #7A98A2, 10, 0, 0, 3);
 
     -fx-arc-width: 30;
@@ -25,8 +32,8 @@
 
 #borderSmall{
     -fx-fill:white;
-    -fx-effect: dropshadow(gaussian, #7A98A2, 10, 0, 0, 3);
-
+    /*-fx-effect: dropshadow(gaussian, #7A98A2, 10, 0, 0, 3);
+*/
     /*combinando estos dos se redondean los bordes*/
     -fx-arc-width: 20;
     -fx-arc-height: 20;
@@ -34,9 +41,10 @@
 
 /*---------------------------------*/
 #TextoIdentificativoColumna{
-    -fx-font-size:16px;
+    -fx-font-size:17px;
     -fx-font-weight:bold;
     -fx-font-family:'Calibri';
+    -fx-underline:true;
 }
 
 #textoSmall{
@@ -46,10 +54,48 @@
     -fx-font-family:'System';
 }
 
+#textoFijoInput{
+    -fx-font-family:'sans-serif';
+    -fx-font-weight:bold;
+    -fx-font-size:14;
+}
+/*---------------------------------*/
+#botonServeis, #botonBorrar, #botonConsultar, #botonEditar{
+    -fx-background-color: #50D5DC;
+    -fx-background-radius: 15;
+    -fx-text-fill: white;
+
+    -fx-border-radius: 15;
+    -fx-border-color: #157F85;
+}
+
+#botonServeis:pressed, #botonBorrar:pressed, #botonConsultar:pressed, #botonEditar:pressed{
+    -fx-background-color: #268DAD;
+}
+
 /*---------------------------------*/
 
-/*-----------------*/
-#VBoxIzq{
-        -fx-pref-height:200;
 
+#checkbox{
+    -fx-text-fill:#0D4050;
+    -fx-font-family:'Verdana';
+    -fx-font-style:italic;
+}
+/*---------------------------------*/
+#loginRect{
+    -fx-fill: #2C409A;
+}
+
+#profRect{
+    -fx-fill:#23AAC3;
+}
+#AlumnRect{
+    -fx-fill:#822AE4;
+}
+
+#tramitsRect{
+    -fx-fill:#69ECDF;
+}
+#docuRect{
+    -fx-fill:#BC87F6;
 }

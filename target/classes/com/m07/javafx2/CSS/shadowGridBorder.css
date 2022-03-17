@@ -1,5 +1,0 @@
-.bottom-shadow {
-    -fx-border-width: 5px;
-    -fx-border-color: white white linear-gradient(rgba(0,0,0,0.5), 
-     rgba(255,255,255,0)) white; 
-}

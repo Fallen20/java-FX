@@ -171,16 +171,16 @@
                      </font>
                   </Text>
                   <Separator layoutX="9.0" layoutY="45.0" prefHeight="6.0" prefWidth="99.0" />
-                  <CheckBox layoutX="11.0" layoutY="67.0" mnemonicParsing="false" text="Nominas" />
-                  <CheckBox layoutX="11.0" layoutY="105.0" mnemonicParsing="false" text="IVA" />
-                  <CheckBox layoutX="11.0" layoutY="144.0" mnemonicParsing="false" text="Lloguers" />
-                  <CheckBox layoutX="11.0" layoutY="182.0" mnemonicParsing="false" text="Seg. Social" />
-                  <CheckBox layoutX="11.0" layoutY="222.0" mnemonicParsing="false" text="Riscos Laborals" />
-                  <CheckBox layoutX="11.0" layoutY="338.0" mnemonicParsing="false" text="Mútues" />
-                  <CheckBox layoutX="11.0" layoutY="262.0" mnemonicParsing="false" text="Mòduls" />
-                  <CheckBox layoutX="11.0" layoutY="300.0" mnemonicParsing="false" text="Renda" />
-                  <CheckBox layoutX="11.0" layoutY="375.0" mnemonicParsing="false" text="Convenis" />
-                  <Button layoutX="11.0" layoutY="416.0" mnemonicParsing="false" text="Serveis" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="67.0" mnemonicParsing="false" text="Nominas" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="105.0" mnemonicParsing="false" text="IVA" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="144.0" mnemonicParsing="false" text="Lloguers" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="182.0" mnemonicParsing="false" text="Seg. Social" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="222.0" mnemonicParsing="false" text="Riscos Laborals" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="338.0" mnemonicParsing="false" text="Mútues" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" text="Mòduls" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="300.0" mnemonicParsing="false" text="Renda" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="375.0" mnemonicParsing="false" text="Convenis" />
+                  <Button id="botonServeis" layoutX="11.0" layoutY="416.0" mnemonicParsing="false" text="Serveis" />
                </children>
             </Pane>
          </children>
@@ -206,38 +206,38 @@
                   <Separator layoutX="20.0" layoutY="179.0" maxWidth="700.0" prefHeight="2.0" prefWidth="338.0" />
                   <Group layoutX="25.0" layoutY="228.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom fiscal" />
+                        <Text id="textoFijoInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom fiscal" />
                         <TextField id="input" fx:id="NombreFiscalInput" editable="false" layoutX="134.0" layoutY="-15.0" promptText="Escola del treball" stylesheets="@CSS/inputEstilos.css" />
                      </children>
                   </Group>
-                  <Group layoutX="22.0" layoutY="263.0">
+                  <Group layoutX="25.0" layoutY="263.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
-                        <TextField id="input" fx:id="NombreInput" editable="false" layoutX="137.0" layoutY="-15.0" promptText="Escola del treball" stylesheets="@CSS/inputEstilos.css" />
+                        <Text id="textoFijoInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+                        <TextField id="input" fx:id="NombreInput" editable="false" layoutX="134.0" layoutY="-15.0" promptText="Escola del treball" stylesheets="@CSS/inputEstilos.css" />
                      </children>
                   </Group>
-                  <Group layoutX="23.0" layoutY="297.0">
+                  <Group layoutX="25.0" layoutY="297.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adreça" />
-                        <TextField id="input" fx:id="DireccionInput" editable="false" layoutX="135.0" layoutY="-15.0" promptText="Urgell 222" stylesheets="@CSS/inputEstilos.css" />
+                        <Text id="textoFijoInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Adreça" />
+                        <TextField id="input" fx:id="DireccionInput" editable="false" layoutX="134.0" layoutY="-15.0" promptText="Urgell 222" stylesheets="@CSS/inputEstilos.css" />
                      </children>
                   </Group>
-                  <Group layoutX="20.0" layoutY="364.0">
+                  <Group layoutX="25.0" layoutY="364.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Província" />
-                        <TextField id="input" fx:id="ProvinciaInput" editable="false" layoutX="137.0" layoutY="-15.0" promptText="Barcelona" stylesheets="@CSS/inputEstilos.css" />
+                        <Text id="textoFijoInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Província" />
+                        <TextField id="input" fx:id="ProvinciaInput" editable="false" layoutX="134.0" layoutY="-15.0" promptText="Barcelona" stylesheets="@CSS/inputEstilos.css" />
                      </children>
                   </Group>
-                  <Group layoutX="23.0" layoutY="329.0">
+                  <Group layoutX="25.0" layoutY="329.0">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ciutat" />
-                        <TextField id="input" fx:id="CiudadInput" editable="false" layoutX="135.0" layoutY="-15.0" promptText="Barcelona" stylesheets="@CSS/inputEstilos.css" />
+                        <Text id="textoFijoInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciutat" />
+                        <TextField id="input" fx:id="CiudadInput" editable="false" layoutX="134.0" layoutY="-15.0" promptText="Barcelona" stylesheets="@CSS/inputEstilos.css" />
                      </children>
                   </Group>
                   <Separator layoutX="20.0" layoutY="397.0" maxWidth="700.0" prefHeight="4.0" prefWidth="343.0" />
-                  <Button layoutX="27.0" layoutY="417.0" mnemonicParsing="false" onAction="#editable" prefWidth="90.0" text="Editar" fx:id="botonEditar"/>
-                  <Button layoutX="144.0" layoutY="417.0" mnemonicParsing="false" onAction="#consultar" prefWidth="90.0" text="Consultar" />
-                  <Button id="eraseButton" layoutX="270.0" layoutY="417.0" mnemonicParsing="false" onAction="#erase" prefWidth="90.0" text="Esborrar" />
+                  <Button id="botonEditar" fx:id="botonEditar" layoutX="27.0" layoutY="417.0" mnemonicParsing="false" onAction="#editable" prefWidth="90.0" text="Editar" />
+                  <Button id="botonConsultar" layoutX="144.0" layoutY="417.0" mnemonicParsing="false" onAction="#consultar" prefWidth="90.0" text="Consultar" />
+                  <Button id="botonBorrar" layoutX="270.0" layoutY="417.0" mnemonicParsing="false" onAction="#erase" prefWidth="90.0" text="Esborrar" />
                </children>
             </Pane>
          </children>
