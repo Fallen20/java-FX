@@ -25,46 +25,46 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" stylesheets="@CSS/estiloScene1.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.m07.javafx2.HelloController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar id="menuBarPadre" BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="Clients">
+          <Menu id="menuElementos" mnemonicParsing="false" text="Clients">
             <items>
-              <MenuItem mnemonicParsing="false" text="Open" />
-                  <MenuItem mnemonicParsing="false" text="Open" />
-                  <Menu mnemonicParsing="false" text="Open Recent">
+              <MenuItem id="menuItems" mnemonicParsing="false" text="Open" />
+                  <MenuItem id="menuItems" mnemonicParsing="false" text="Open" />
+                  <Menu id="menuItems2" mnemonicParsing="false" text="Open Recent">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="Reciente 1" />
+                      <MenuItem id="menuItems2" mnemonicParsing="false" text="Reciente 1" />
                     </items>
                   </Menu>
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
-                  <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Save as.." />
-                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <MenuItem id="menuItems" mnemonicParsing="false" text="Close" />
+                  <MenuItem id="menuItems" mnemonicParsing="false" text="Save" />
+                  <MenuItem id="menuItems" mnemonicParsing="false" text="Save as.." />
+                  <MenuItem id="menuItems" mnemonicParsing="false" text="Revert" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Preferences.." />
+                  <MenuItem id="menuItems" mnemonicParsing="false" text="Preferences.." />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Quit" />
+                  <MenuItem id="menuItems" mnemonicParsing="false" text="Quit" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Expedients">
+          <Menu id="menuElementos" mnemonicParsing="false" text="Expedients">
             <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
+              <MenuItem id="menuItems" mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Tramits">
+          <Menu id="menuElementos" mnemonicParsing="false" text="Tramits">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem id="menuItems" mnemonicParsing="false" text="About" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Administracio">
+            <Menu id="menuElementos" mnemonicParsing="false" text="Administracio">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem id="menuItems" mnemonicParsing="false" text="Action 1" />
               </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Llistats">
+            <Menu id="menuElementos" mnemonicParsing="false" text="Llistats">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem id="menuItems" mnemonicParsing="false" text="Action 1" />
               </items>
             </Menu>
         </menus>

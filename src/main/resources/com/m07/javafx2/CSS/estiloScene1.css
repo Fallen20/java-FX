@@ -15,6 +15,35 @@
 
 }
 
+#menuBarPadre{
+    -fx-background-color:#BECDD6;
+    -fx-effect: dropshadow(gaussian, #7A98A2, 2, 0, 0, 3);
+    -fx-border-width:2px;
+    -fx-padding:5px;
+
+    -fx-spacing:10;/*espacio entre botones*/
+}
+
+#menuElementos{
+    -fx-background-color: #F1FBFD;
+
+    -fx-background-radius:5px;
+    -fx-border-radius: 5px;
+
+}
+
+#menuElementos>.label{/*el texto de dentro*/
+    -fx-text-fill:#173250;
+}
+#menuElementos:hover,#menuElementos>.label:hover{
+    -fx-background-color: #93ABC3;
+    -fx-text-fill:white;
+}
+
+#menuItems:hover, #menuItems2:hover{
+    -fx-background-color: #B5C8DA;
+}
+
 /*---------------------------------*/
 #borderPadre{
     -fx-pref-width:800;
@@ -34,7 +63,7 @@
     -fx-fill:white;
     /*-fx-effect: dropshadow(gaussian, #7A98A2, 10, 0, 0, 3);
 */
-    /*combinando estos dos se redondean los bordes*/
+    /*combinando estos dos se redondean los bordes del rectangulo*/
     -fx-arc-width: 20;
     -fx-arc-height: 20;
 }
@@ -74,7 +103,6 @@
 }
 
 /*---------------------------------*/
-
 
 #checkbox{
     -fx-text-fill:#0D4050;
