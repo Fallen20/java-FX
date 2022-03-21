@@ -14,14 +14,13 @@ public class HelloController {
     @FXML
     private Button buttonProjected;
 
-    public static Stage stage = new Stage();
     @FXML
     public static void changeToScene2(ActionEvent cambio) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("scene2.fxml"));
             Parent root = (Parent) fxmlLoader.load();
 
-
+            Stage stage = new Stage();
             stage.setTitle("Ventana Proyection");
 
             stage.setWidth(635);
@@ -30,8 +29,6 @@ public class HelloController {
 
             stage.setScene(new Scene(root));
             stage.show();
-
-            stage.close();
 
         } catch (IOException e) {
             e.printStackTrace();

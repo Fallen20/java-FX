@@ -10,22 +10,21 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Scene2 {
-    public static Stage stage = new Stage();
 
     @FXML
     public void changeToScene1(ActionEvent actionEvent) {
         //en una nueva ventana
             //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
             //Parent root= (Parent) fxmlLoader.load();//mal, no se hace con fxml pero con code. Esto no sirve
+            Stage stage=new Stage();
             stage.setTitle("Ventana Sales");
             stage.setWidth(701);
             stage.setHeight(600);
 
 
             stage.setScene(HelloApplication.scene);
-            stage.show();
+         stage.show();
 
-            stage.close();
 
 
     }
