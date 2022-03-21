@@ -109,6 +109,19 @@
     -fx-font-family:'Verdana';
     -fx-font-style:italic;
 }
+
+#checkbox .box {
+	-fx-background-color: white;
+	-fx-border-color: #65979e;
+	-fx-border-radius: 3px;
+}
+#checkbox:selected .mark {
+	-fx-background-color: white;
+}
+#checkbox:selected .box {
+	-fx-background-color: #197aaf;
+}
+
 /*---------------------------------*/
 #loginRect{
     -fx-fill: #2C409A;
