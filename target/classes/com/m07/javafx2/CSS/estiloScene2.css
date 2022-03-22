@@ -1,0 +1,61 @@
+#anchorPadre{
+    -fx-pref-width:340;
+    -fx-pref-height:310;
+
+    -fx-min-width:400;
+    -fx-max-width:400;
+
+    -fx-min-height:300;
+    -fx-max-height:600;
+}
+/*---------------------------------*/
+
+#vboxScene2{
+    -fx-padding:15;
+    -fx-spacing:10;
+
+    -fx-pref-width:340;
+    -fx-pref-height:310;
+
+    -fx-min-width:400;
+    -fx-max-width:400;
+
+    -fx-min-height:300;
+    -fx-max-height:600;
+}
+
+#hboxBoton, #hboxTitle{
+    -fx-alignment:center;
+}
+
+/*---------------------------------*/
+#titulo{
+    -fx-text-fill: #0C192C;
+    -fx-font-family:'Helvetica';
+    -fx-font-size:18px;
+    -fx-font-weight: bold;
+    -fx-underline:true;
+}
+#textoStill{
+    -fx-text-fill: #0C192C;
+    -fx-font-family:'Helvetica';
+    -fx-font-size:15px;
+    -fx-font-weight: bold;
+}
+#textoRecibido{
+    -fx-text-fill: #0C192C;
+    -fx-font-family:'Helvetica';
+    -fx-translate-x:10;
+    -fx-font-size:15px;
+}
+
+
+/*---------------------------------*/
+
+#botonCerrarScene2{
+    -fx-background-color: #80A4D9;
+    -fx-text-fill:white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}

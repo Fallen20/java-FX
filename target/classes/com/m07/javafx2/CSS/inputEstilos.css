@@ -1,0 +1,9 @@
+
+
+#input:readonly{
+    -fx-background-color:#4D7B7E;
+}
+
+#input:editable{
+     -fx-background-color: #D8FDFF;
+}
