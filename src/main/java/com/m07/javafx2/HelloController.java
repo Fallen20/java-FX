@@ -2,6 +2,7 @@ package com.m07.javafx2;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -9,8 +10,10 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class HelloController{
+public class HelloController implements Initializable {
     @FXML
     public TextField NombreFiscalInput;
     @FXML
@@ -23,6 +26,17 @@ public class HelloController{
     public TextField CiudadInput;
     @FXML
     public Button botonEditar;
+
+    @FXML
+    public Text fiscalBinding;
+    @FXML
+    public Text nombreBinding;
+    @FXML
+    public Text direccionBinding;
+    @FXML
+    public Text ciudadBinding;
+    @FXML
+    public Text provinciaBinding;
 
     public static  Stage stage=new Stage();
 
@@ -93,5 +107,12 @@ public class HelloController{
     }
 
 
-
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {//al iniciarse haz esto
+        fiscalBinding.textProperty().bind(NombreFiscalInput.textProperty());
+        nombreBinding.textProperty().bind(NombreInput.textProperty());
+        direccionBinding.textProperty().bind(DireccionInput.textProperty());
+        provinciaBinding.textProperty().bind(ProvinciaInput.textProperty());
+        ciudadBinding.textProperty().bind(CiudadInput.textProperty());
+    }
 }
