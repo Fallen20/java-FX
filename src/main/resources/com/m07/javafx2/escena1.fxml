@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
@@ -164,37 +165,22 @@
             <Pane prefHeight="458.0" prefWidth="178.0" BorderPane.alignment="CENTER">
                <children>
                   <Rectangle id="border" arcHeight="5.0" arcWidth="5.0" fill="#2197ff" height="450.0" layoutX="6.0" layoutY="10.0" stroke="#c3c3c3" strokeType="INSIDE" styleClass="border" width="164.0" />
-                  <Text id="TextoIdentificativoColumna" layoutX="15.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos introducidos">
+                  <Text id="TextoIdentificativoColumna" layoutX="15.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serveis">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Text>
-                  <Separator layoutX="15.0" layoutY="67.0" prefHeight="1.0" prefWidth="143.0" />
-                  <Text layoutX="15.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre fiscal:" wrappingWidth="129.33672714233398">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="15.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección completa:" wrappingWidth="142.93670272827148">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="15.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" wrappingWidth="129.33672714233398">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Text>
+                  <Separator layoutX="9.0" layoutY="45.0" prefHeight="6.0" prefWidth="99.0" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="67.0" mnemonicParsing="false" text="Nominas" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="105.0" mnemonicParsing="false" text="IVA" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="144.0" mnemonicParsing="false" text="Lloguers" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="182.0" mnemonicParsing="false" text="Seg. Social" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="222.0" mnemonicParsing="false" text="Riscos Laborals" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="338.0" mnemonicParsing="false" text="Mútues" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" text="Mòduls" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="300.0" mnemonicParsing="false" text="Renda" />
+                  <CheckBox id="checkbox" layoutX="14.0" layoutY="375.0" mnemonicParsing="false" text="Convenis" />
                   <Button id="botonServeis" layoutX="11.0" layoutY="416.0" mnemonicParsing="false" text="Serveis" />
-                  <Text fx:id="fiscalBinding" layoutX="15.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre fiscal del profile" wrappingWidth="129.33672714233398" />
-                  <Text fx:id="nombreBinding" layoutX="15.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del profile" wrappingWidth="129.33672714233398" />
-                  <Text layoutX="15.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C/" wrappingWidth="22.13677978515625" />
-                  <Text fx:id="ciudadBinding" layoutX="15.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barcelona" wrappingWidth="62.936702728271484" />
-                  <Text fx:id="provinciaBinding" layoutX="15.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="barcelona 2" wrappingWidth="129.33672714233398" />
-                  <Text fx:id="direccionBinding" layoutX="33.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C/ direccion" wrappingWidth="83.73675155639648" />
-                  <Text layoutX="105.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="22.13677978515625" />
-                  <Text layoutX="100.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="22.13677978515625" />
-                  <Text layoutX="98.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="," wrappingWidth="22.13677978515625" />
                </children>
             </Pane>
          </children>
@@ -232,7 +218,7 @@
                   </Group>
                   <Group layoutX="25.0" layoutY="297.0">
                      <children>
-                        <Text id="textoFijoInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom adreça" />
+                        <Text id="textoFijoInput" strokeType="OUTSIDE" strokeWidth="0.0" text="Adreça" />
                         <TextField id="input" fx:id="DireccionInput" editable="false" layoutX="134.0" layoutY="-15.0" promptText="Urgell 222" stylesheets="@CSS/inputEstilos.css" />
                      </children>
                   </Group>
