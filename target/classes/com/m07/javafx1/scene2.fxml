@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@CSS/estiloScena2.css" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.m07.javafx1.Scene2">
+   <children>
+      <HBox id="hboxScene2" prefHeight="58.0" prefWidth="621.0">
+         <children>
+            <Button id="currentButtonScene2" mnemonicParsing="false" onAction="#changeToScene1" text="Current" />
+            <Button id="buttonProyectedScene2" mnemonicParsing="false" text="Proyected" />
+         </children>
+      </HBox>
+      <Group id="grupoGoodServices" layoutX="14.0" layoutY="66.0">
+         <children>
+            <Text id="goodServicesScene2" layoutX="63.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goods and Services:" />
+            <ImageView id="casaScene2" fitHeight="58.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@graphics/house-noBG.png" />
+               </image>
+            </ImageView>
+            <Text id="expectationsTitScene2" layoutX="266.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expectations" />
+         </children>
+      </Group>
+      <HBox id="hboxScene2_2" layoutY="118.0" prefHeight="282.0" prefWidth="600.0">
+         <children>
+            <Text id="expectationsScene2" strokeType="OUTSIDE" strokeWidth="0.0" text="Expectations of the evolution of the values after new year" wrappingWidth="600.0" />
+         </children>
+      </HBox>
+      <Text id="txtExplicacionScene2" layoutX="394.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slight increase in the production of goods and a large increase in the supply of services" wrappingWidth="218.93670654296875" />
+      <ImageView id="graficoScene2" fitHeight="208.0" fitWidth="323.0" layoutX="52.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@graphics/bar-graph.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

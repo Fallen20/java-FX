@@ -1,0 +1,63 @@
+.root{
+    -fx-background-color: linear-gradient(to bottom, #AD8745, #E0D1B2);
+}
+
+#hboxScene2{
+    -fx-padding: 15,12,15,12;
+    -fx-spacing:10;
+    -fx-background-color: #AD8745;
+    -fx-border-width: 0.5;
+    -fx-border-radius: 3;
+    -fx-border-color: black;
+}
+
+#currentButtonScene2:pressed, #buttonProyectedScene2:pressed{
+    -fx-background-color:#87755B;
+        -fx-text-fill:white;
+
+}
+
+
+#currentButtonScene2, #buttonProyectedScene2{
+    -fx-background-color: #CFB99F;
+    -fx-background-radius: 9px;
+    -fx-border-radius:9px;
+    -fx-effect: dropshadow(gaussian,#908779, 2,0,1,2);
+}
+
+
+#currentButtonScene2{
+    -fx-pref-width: 80;
+    -fx-pref-height: 20;
+}
+
+#buttonProyectedScene2{
+    -fx-pref-width: 100;
+    -fx-pref-height: 20;
+
+}
+
+#grupoGoodServices{
+    -fx-padding:10;
+    -fx-spacing:8px;
+}
+
+#goodServicesScene2,#expectationsTitScene2{
+    -fx-font-family:'Arial';
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+/*-------------------------------*/
+#hboxScene2_2{
+    -fx-padding:10;
+    -fx-font-family:'Verdana';
+    -fx-font-style: italic;
+    -fx-font-size: 14px;
+}
+
+/*-------------------------------*/
+#txtExplicacionScene2{
+    -fx-font-family:'Helvetica';
+    -fx-font-size: 14px;
+    -fx-line-spacing:10;
+}
